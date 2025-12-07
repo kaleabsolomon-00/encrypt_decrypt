@@ -15,7 +15,16 @@ def encrypt(val, shift):
         word+=i
     print(word)
 def decrypt(val, shift):
-
+    decrypted=[]
+    for letter in val:
+        index=alphabet.index(letter)
+        goal=int(index)-int(shift)
+        let=alphabet[goal]
+        decrypted.append(let)
+    word=""
+    for char in decrypted:
+        word+=char
+    print(word)
 while True:
     choice=input("a.encrypt\nb.decrypt\n")
     if choice == "a" or choice== "A":
