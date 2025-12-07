@@ -4,7 +4,16 @@ alphabet = [
     'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
 def encrypt(val, shift):
-
+    encrypted=[]
+    for letter in val:
+        index=alphabet.index(letter)
+        goal=int(index)+int(shift)
+        let=alphabet[goal]
+        encrypted.append(let)
+    word=""
+    for i in encrypted:
+        word+=i
+    print(word)
 def decrypt(val, shift):
 
 while True:
