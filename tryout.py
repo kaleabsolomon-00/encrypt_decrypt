@@ -36,4 +36,4 @@ while True:
         shift = input(" enter the shifting position:  ")
         decrypt(val, shift)
     else:
-        print("wrong choice try again")
+        print("wrong choice please wnter a right choice")
